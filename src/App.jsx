@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ProductList from './ProductList';
 import './App.css';
 import AboutUs from './AboutUs';
@@ -15,6 +15,14 @@ function App() {
   const handleHomeClick = () => {
     setShowProductList(false);
   };
+
+  useEffect(() => {
+    if (!showProductList) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+  }, [showProductList]);
 
   return (
     <div className="app-container">

@@ -39,6 +39,18 @@ body {
    
 }
 
+.category-heading {
+    text-align: center;
+    margin: 40px auto 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #2e7d32; /* green tone */
+    border-bottom: 2px solid #4caf50;
+    display: table;          /* centers the block nicely */
+    padding-bottom: 5px;
+  }
+
+
 /* Product Grid */
 .product-grid {
     display:flex;
